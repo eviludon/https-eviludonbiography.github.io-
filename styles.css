@@ -1,0 +1,186 @@
+
+flex-wrap: nowrap;
+align-self: center;
+background-color:lightblue;
+border-top: 1px solid black;
+border-bottom: 1px solid black;
+   color: white; 
+   height: 6vh;
+   position: fixed; 
+  top: 0; 
+  width: 100%;
+   
+}
+
+.nav-link:hover {
+background-color:blue;
+color:yellow;
+}
+
+#logo {
+   width: 10%;
+   background-color: none;
+   font-weight: bold;
+   display: inline-flex;
+   justify-content:center;
+flex-wrap: nowrap;
+align-self: center;
+border-top: 1px solid black;
+}
+
+.dad
+{
+    width:50%;
+ display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+#logo:hover {
+background-color: blue;
+}
+
+
+p
+{
+margin:0;
+padding-top:10px;
+}
+main {
+    background-color: white;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    
+}
+
+#title {
+    padding-top: 30px;
+    margin: 0px;
+    font-size: 40px;
+}
+
+
+.header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding:40px 0 0 0;
+    margin:0;
+}
+
+#img-div {
+    width: 100%;
+    height:100%;
+    padding:0;
+    margin:0;
+    background-color: white;
+}
+
+#img-div > #image {
+    display: block;
+    margin: 20px auto;
+    width: 60%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.images
+{
+ width: 100%;
+ height:100%;
+margin: auto;
+object-fit: cover;
+}
+
+#img-div > #img-caption {
+    width: 59%;
+    margin: 5px auto;
+    padding-bottom: 20px;
+}
+
+#tribute-info {
+}
+
+#tribute-info > h3 {
+    margin: 50px 0 20px 0;
+}
+
+span{
+    font-weight: bold;
+}
+
+.timeline ul li
+{
+margin: 30px;
+  border: 3px solid green;
+  padding: 30px;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  
+}
+
+#img-caption
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column; 
+}
+
+
+#tribute-info > div > ul > li {
+    width: 45%;
+    margin: 20px auto;
+    line-height: 30px;
+}
+
+q {
+    margin: 20px 0 0 0;
+}
+
+footer {
+    margin: 20px 0;
+}
+
+a {
+    cursor: pointer;
+    color: rgb(108, 137, 223);
+}
+
+
+.images
+{
+  margin: 0 0 10px 0;  
+  padding:30px;
+}
+
+button
+{
+    margin:50px;
+    padding:50px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url( 
+'https://images.unsplash.com/photo-1537420327992-d6e192287183?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); 
+            background-size: cover; 
+}
+
+
+button:hover
+{
+    border: 2mm solid rgba(255, 0, 61, .8);
+}
