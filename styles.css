@@ -1,59 +1,55 @@
-
-flex-wrap: nowrap;
-align-self: center;
-background-color:lightblue;
-border-top: 1px solid black;
-border-bottom: 1px solid black;
-   color: white; 
-   height: 6vh;
-   position: fixed; 
-  top: 0; 
-  width: 100%;
-   
+body {
+    flex-wrap: nowrap;
+    align-self: center;
+    background-color: lightblue;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    color: white; 
+    height: 100%; /* Make sure the body takes up full height */
+    position: relative; /* So other elements don't overlap the body */
+    margin: 0; /* Ensure there's no extra space around the body */
 }
 
 .nav-link:hover {
-background-color:blue;
-color:yellow;
+    background-color: blue;
+    color: yellow;
 }
 
 #logo {
-   width: 10%;
-   background-color: none;
-   font-weight: bold;
-   display: inline-flex;
-   justify-content:center;
-flex-wrap: nowrap;
-align-self: center;
-border-top: 1px solid black;
+    width: 10%;
+    background-color: none;
+    font-weight: bold;
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-self: center;
+    border-top: 1px solid black;
 }
 
-.dad
-{
-    width:50%;
- display: flex;
+.dad {
+    width: 50%;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
 }
 
 #logo:hover {
-background-color: blue;
+    background-color: blue;
 }
 
-
-p
-{
-margin:0;
-padding-top:10px;
+p {
+    margin: 0;
+    padding-top: 10px;
 }
+
 main {
     background-color: white;
-     display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
-    
+    margin-top: 100px; /* Add some space below the fixed navbar */
 }
 
 #title {
@@ -61,7 +57,6 @@ main {
     margin: 0px;
     font-size: 40px;
 }
-
 
 .header {
     width: 100%;
@@ -71,15 +66,15 @@ main {
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
-    padding:40px 0 0 0;
-    margin:0;
+    padding: 40px 0 0 0;
+    margin: 0;
 }
 
 #img-div {
     width: 100%;
-    height:100%;
-    padding:0;
-    margin:0;
+    height: 100%;
+    padding: 0;
+    margin: 0;
     background-color: white;
 }
 
@@ -92,12 +87,11 @@ main {
     object-fit: cover;
 }
 
-.images
-{
- width: 100%;
- height:100%;
-margin: auto;
-object-fit: cover;
+.images {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    object-fit: cover;
 }
 
 #img-div > #img-caption {
@@ -113,32 +107,28 @@ object-fit: cover;
     margin: 50px 0 20px 0;
 }
 
-span{
+span {
     font-weight: bold;
 }
 
-.timeline ul li
-{
-margin: 30px;
-  border: 3px solid green;
-  padding: 30px;
-   display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-  
-}
-
-#img-caption
-{
+.timeline ul li {
+    margin: 30px;
+    border: 3px solid green;
+    padding: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
+#img-caption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
 
 #tribute-info > div > ul > li {
     width: 45%;
@@ -159,28 +149,61 @@ a {
     color: rgb(108, 137, 223);
 }
 
-
-.images
-{
-  margin: 0 0 10px 0;  
-  padding:30px;
+.images {
+    margin: 0 0 10px 0;
+    padding: 30px;
 }
 
-button
-{
-    margin:50px;
-    padding:50px;
+button {
+    margin: 50px;
+    padding: 50px;
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url( 
-'https://images.unsplash.com/photo-1537420327992-d6e192287183?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); 
-            background-size: cover; 
+    background-image: url('https://images.unsplash.com/photo-1537420327992-d6e192287183?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
 }
 
-
-button:hover
-{
+button:hover {
     border: 2mm solid rgba(255, 0, 61, .8);
+}
+
+/* Fixed Navbar Styles */
+body {
+    padding-top: 6vh; /* To prevent the content from being hidden behind the navbar */
+}
+
+.navi {
+    position: fixed; /* Ensure navbar is fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: lightblue; /* Matching the body background */
+    z-index: 1000; /* Ensure navbar is above all content */
+    display: flex;
+    justify-content: space-around; /* To evenly space out links */
+    padding: 10px 0;
+}
+
+#topnav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.nav-link {
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    background-color: blue;
+    color: yellow;
+}
+
+#logo {
+    font-size: 2rem;
 }
